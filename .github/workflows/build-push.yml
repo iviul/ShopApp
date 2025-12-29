@@ -59,7 +59,7 @@ jobs:
       working-directory: ${{ matrix.context }}
       run: npm ci
 
-    - name: Run frontend tests
+    - name: Run frontend lint
       if: matrix.name == 'frontend'
       working-directory: ${{ matrix.context }}
       run: npm run lint
